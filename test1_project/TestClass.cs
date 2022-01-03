@@ -7,6 +7,13 @@ namespace test1_project
     public class TestClass
     {
         FormPage page;
+
+        [SetUp]
+        public void Setup()
+        {
+            //TODO: Connect to DB and get form data
+        }
+
         [Test]
         public void FirstTest()
         {
@@ -22,7 +29,7 @@ namespace test1_project
             page.hobbies("Music","Sports");
             page.clickSubmit();
             Assert.IsTrue(page.CheckForm(), "Form Is Not Valid");
-
+            
         }
         [TearDown]
         public void TearDown()

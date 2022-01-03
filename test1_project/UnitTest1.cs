@@ -34,6 +34,7 @@ namespace test1_project
         private readonly string cityLocatorFormat = "//div[@id='city']//*[text()='{0}']";
         private readonly string hobbyLocatorFormat = "//label[text() = '{0}']";
         private readonly string submitLocator = "submit";
+
         Dictionary<string, string[]> stateAndCity = new Dictionary<string, string[]>()
         {
             { "NCR", new string[]{"Delhi", "Gurgaon", "Noida" } },
@@ -42,8 +43,7 @@ namespace test1_project
             {"Rajasthan", new string[]{"Jaipur","Jiselmer"} }
 
         };
-        
-        
+
         public void fillName(string firstNameString, string lastNameString)
         {
 
