@@ -8,12 +8,7 @@ namespace test1_project
     {
         FormPage page;
 
-        [SetUp]
-        public void Setup()
-        {
-            //TODO: Connect to DB and get form data
-        }
-
+        
         [Test]
         public void FirstTest()
         {
