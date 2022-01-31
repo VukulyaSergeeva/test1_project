@@ -19,7 +19,7 @@ namespace test1_project
 		[Test]
 		public void SecondTest()
 		{
-			using (var conn = new MySqlConnection("Server=localhost;User ID=novyi_polzovatel;Password=123;Database=local_db"))
+			using (var conn = new MySqlConnection("Server=localhost;User ID=newuser;Password=root;Database=user_db"))
             {
 				conn.Open();
 				using(var command = new MySqlCommand("SELECT * FROM client_table", conn))
@@ -28,7 +28,7 @@ namespace test1_project
                     {
 						Console.WriteLine(result.GetString(3));
                     }
-
+				
 			}
 				
 			//page = new FormPageSecond("https://demoqa.com/text-box");
