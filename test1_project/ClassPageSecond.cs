@@ -46,6 +46,10 @@ namespace test1_project
 			var permanentAddress = driver.FindElement(By.Id(permanentAddressLocator));
 			permanentAddress.SendKeys(permamentAddressString);
         }
+		public void Close()
+        {
+			driver.Close();
+        }
 
 		public bool CheckForn()
         {
