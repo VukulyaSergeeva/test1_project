@@ -10,28 +10,18 @@ namespace test1_project
 	public class Class_Test2
 	{
 		FormPageSecond page;
-		List<string> addressList;
+        private List<string> valuesList;
 
 		[SetUp]
 		public void Setup()
 		{
 
 			var db = new DbClass();
-			addressList =  db.getAddress();
+			valuesList = db.GetValues("email");
+
 			//TODO: Move DB logic to the separate class
 
-			var addresses = new List<string>();
-			using (var conn = new MySqlConnection("Server=localhost;User ID=newuser;Password=123;Database=user_db"))
-			{
-				conn.Open();
-				using (var command = new MySqlCommand("SELECT * FROM client_table", conn))
-				using (var result = command.ExecuteReader())
-					while (result.Read())
-					{
-						addresses.Add(result.GetString(3));
-					}
 
-			}
 		}
 
 

@@ -7,13 +7,15 @@ using OpenQA.Selenium.Chrome;
 
 namespace test1_project
 {
-	public class FormPageSecond
+	public class TextBoxPage :BasePage
 	{
-		IWebDriver driver;
-		public FormPageSecond(string url)
+		
+		public static string URL = "https://demoqa.com/text-box";
+
+
+		public TextBoxPage(IWebDriver driver) : base(driver)
 		{
-			driver = new ChromeDriver();
-			driver.Url = url;
+
 		}
 
 		private readonly string formCheckSelector = "//*[contains(@class,'field-error')]";//?
@@ -23,7 +25,7 @@ namespace test1_project
 		private readonly string permanentAddressLocator = "permanentAddress";
 		private readonly string submitLocator = "submit";
 
-		public void fullName(string fullNameString)
+		/*public void fullName(string fullNameString)
         {
 			var fullName = driver.FindElement(By.Id(fullNameLocator));
 			fullName.SendKeys(fullNameString);
@@ -63,8 +65,8 @@ namespace test1_project
             {
 				
 				return true;
-            }
-        }
+            }*/
+       // }
 	}
 }
 
