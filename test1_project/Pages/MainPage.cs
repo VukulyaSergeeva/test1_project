@@ -7,11 +7,11 @@ using System.Text;
 
 namespace test1_project.Pages
 {
-    public class LinksPage : BasePage
+    public class MainPage :BasePage
     {
-        public static string URL = "https://demoqa.com/links";
+        public static string URL = "https://demoqa.com/";
 
-        public LinksPage(IWebDriver driver) : base(driver)
+        public MainPage(IWebDriver driver) : base(driver)
         {
 
         }
