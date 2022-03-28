@@ -8,6 +8,8 @@ namespace test1_project.Pages
 {
     public class BasePage
     {
+		
+
 		IWebDriver driver;
 		public BasePage(string url)
 		{
