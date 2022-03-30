@@ -10,7 +10,7 @@ namespace test1_project.Pages
     {
 		
 
-		IWebDriver driver;
+		public IWebDriver driver;
 		public BasePage(string url)
 		{
 			driver = new ChromeDriver();

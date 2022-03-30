@@ -10,6 +10,15 @@ namespace test1_project.Pages
     {
         public static string URL = "https://demoqa.com/webtables";
 
+        private readonly string addButtonLocator = "#addNewRecordButton";
+        private readonly string searchBoxLocator = "#searchBox";
+        private readonly string firstNameLocator = "#firstName";
+        private readonly string lastNameLocator = "#lastName";
+        private readonly string emailLocator = "#userEmail";
+        private readonly string ageLocator = "#age";
+        private readonly string salaryLocator = "#salary";
+        private readonly string departmentLocator = "#department";
+        private readonly string submitButtonLocator = "submit";
         public WebTablesPage(IWebDriver driver) : base(driver)
         {
 

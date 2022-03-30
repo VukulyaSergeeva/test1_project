@@ -19,5 +19,15 @@ namespace test1_project.Pages
         {
 
         }
+        public void ClickvalidLink()
+        {
+            var validLinkbutton = driver.FindElement(By.XPath(validLinkLocator));
+            validLinkbutton.Click();
+        }
+        public void ClickbrokenLinlk()
+        {
+            var brokenLinkbutton=driver.FindElement(By.XPath(brokenLinkLocator));
+            brokenLinkbutton.Click();
+        }
     }
 }
