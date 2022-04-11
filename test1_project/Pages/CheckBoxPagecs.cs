@@ -62,7 +62,7 @@ namespace test1_project.Pages
         public void ClickexselFile()
         {
             var exselfile = driver.FindElement(By.XPath(exselFileLocator));
-            exselfile.Click();
+            exselfile.Click();     
         }
     }
 }

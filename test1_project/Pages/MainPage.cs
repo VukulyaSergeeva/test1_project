@@ -18,5 +18,10 @@ namespace test1_project.Pages
         {
 
         }
+        public  void Clickelementbutton()
+        {
+            var elementbutton = driver.FindElement(By.XPath(elementLocator));
+            elementbutton.Click();
+        }
     }
 }
