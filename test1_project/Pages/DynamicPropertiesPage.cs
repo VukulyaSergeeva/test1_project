@@ -23,7 +23,7 @@ namespace test1_project.Pages
         {
             var enable = driver.FindElement(By.Id(enableLocator));
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
-            enable = wait.Until(e=>e.FindElement(By.Id(visiblelocator)));
+            enable = wait.Until(e=>e.FindElement(By.XPath(enableLocator)));
             enable.Click();
         }
 

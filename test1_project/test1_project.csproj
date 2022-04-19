@@ -23,5 +23,9 @@
     <None Remove="Selenium.Support" />
     <None Remove="MySql.Data" />
     <None Remove="MySqlConnector" />
+    <None Remove="Steps\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Steps\" />
   </ItemGroup>
 </Project>

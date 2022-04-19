@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 
 
-namespace test1_project
+namespace test1_project.Pages
 {
 	public class TextBoxPage : BasePage
 	{
@@ -15,6 +15,8 @@ namespace test1_project
 
 		public TextBoxPage(IWebDriver driver) : base(driver)
 		{ }
+
+
 		private readonly string formCheckSelector = "//*[contains(@class,'field-error')]";//?
 		private readonly string fullNameLocator = "userName";
 		private readonly string emailLocator = "userEmail";
@@ -22,10 +24,7 @@ namespace test1_project
 		private readonly string permanentAddressLocator = "permanentAddress";
 		private readonly string submitLocator = "submit";
 
-		public RadioButtonPage(IWebDriver driver) : base(driver)
-		{
-
-		}
+		
 		public void fullName(string fullNameString)
 		{
 			var fullName = driver.FindElement(By.Id(fullNameLocator));
@@ -69,3 +68,4 @@ namespace test1_project
 			}
 		}
 	}
+}
