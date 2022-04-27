@@ -14,7 +14,7 @@ namespace test1_project.Pages
         private readonly string documentsbuttonLocator = "//ol//label[contains(@for, 'documents')]//preceding-sibling::button[@type='button']";
         private readonly string downloadsbuttonLocator = "//ol//label[contains(@for, 'downloads)]//preceding-sibling::button[@type='button']";
 
-        private readonly string notesLocator = "#//label[@for='tree-node-notes']//span[@class='rct-checkbox']";
+        private readonly string notesLocator = "//label[@for='tree-node-notes']//span[@class='rct-checkbox']";
         private readonly string workSpaceLocator = "//label[@for='tree-node-workspace']//span [@class='rct-checkbox']";
         private readonly string exselFileLocator = "//label[@for='tree-node-wordFile']//span [@class='rct-checkbox']";
 
@@ -26,26 +26,27 @@ namespace test1_project.Pages
         }
         private readonly string tree_node_homeLocator = "tree-node-home";
 
-        public void Clickhomebutton()
+        public void ClickDropDownHome()
         {
             var homebutton = driver.FindElement(By.XPath(homebuttonLocator));
             homebutton.Click();
         }
-        public void Clickdesktopbutton()
+        public void ClickDropDownDeskTop()
         {
             var desktopbutton = driver.FindElement(By.XPath(desktopsbuttonLocator));
             desktopbutton.Click();
         }
-        public void Clickdocumentsbutton()
+        public void ClickDropDownDocuments()
         {
             var documentsbutton = driver.FindElement(By.XPath(documentsbuttonLocator));
             documentsbutton.Click();
         }
-        public void Clickdownloadbutton()
+        public void ClickDropDownDownload()
         {
             var downloadbutton = driver.FindElement(By.XPath(downloadsbuttonLocator));
             downloadbutton.Click();
         }
+
 
         public void Clicknotes()
         {
