@@ -18,6 +18,7 @@ namespace test1_project.Pages
         private readonly string workSpaceLocator = "//label[@for='tree-node-workspace']//span [@class='rct-checkbox']";
         private readonly string exselFileLocator = "//label[@for='tree-node-wordFile']//span [@class='rct-checkbox']";
 
+        private readonly string selectionElementsLocator = "//div/span[@class='text-success']";
         public static string URL = "https://demoqa.com/checkbox";
 
         public CheckBoxPage(IWebDriver driver) : base(driver)
@@ -64,6 +65,18 @@ namespace test1_project.Pages
         {
             var exselfile = driver.FindElement(By.XPath(exselFileLocator));
             exselfile.Click();     
+        }
+
+        List<string> elementTextList;
+
+        public List<string> GetValuesElements() 
+        {
+            var elementsList = driver.FindElement(By.XPath(selectionElementsLocator));
+            foreach (var item in elementsList)
+            {
+                elementTextList.Add(item.Text());
+            }
+            return elementTextList;     
         }
     }
 }

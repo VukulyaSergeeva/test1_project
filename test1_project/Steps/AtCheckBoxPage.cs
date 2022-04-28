@@ -23,14 +23,25 @@ namespace test1_project.Pages
 			"Notes","WorkSpace","Excel File.doc"
 		};
 
-		Dictionary<string, string[]> TreedropdownDictionary =
+		Dictionary<string, Dictionary<string, string[]>> TreedropdownDictionary =
 			new Dictionary<string, string[]>
 			{
+				{"Home" ,
+					new Dictionary <string,string[]>
+					{
+						{ "Desktop",new string[]{"Notes","Commands"}},
 
-				{"Desktop" ,new string[]{"Notes","Commands"},
-				{"Documents",new string[]{"WorkSpace","Office"}
-
-
+						{"Documents",
+							new Dictionary<string,string[]>
+							{
+								{"WorkSpace",new string[]{"React","Angular","Veu"} } ,
+								{"Office",new string[]{"Public","Private","Classified","General"} }
+							}
+                        },
+							{"Downloads",new string[]{"Word File.doc","Excel File.doc"} }
+						 
+                    }
+                }
 			};
 
 

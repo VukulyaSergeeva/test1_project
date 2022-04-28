@@ -40,7 +40,8 @@ namespace test1_project.Steps
 				atCheckboxPage.ClickCheckbox(item);
 
             }
-			List<string> formattedList;
+			//DIC DESCRIPTION
+			List<string> formattedList;//general list
 			foreach (var item in selectionList)
             {
 				formattedList.Add(item);
@@ -68,10 +69,11 @@ namespace test1_project.Steps
 			return true;
 
 		}
+		List<string> elementTextList;
 		public List<string> GetSelectedElements()//page
         {
 			var elementList = driver.FindElements(By.XPath("<...>"));
-			List<string> elementTextList;
+			
 			foreach (var item in elementList)
             {
 				elementTextList.Add(item.Text());
