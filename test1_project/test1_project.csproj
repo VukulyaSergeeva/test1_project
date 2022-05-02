@@ -24,8 +24,10 @@
     <None Remove="MySql.Data" />
     <None Remove="MySqlConnector" />
     <None Remove="Steps\" />
+    <None Remove="Steps\HelperTree\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Steps\" />
+    <Folder Include="Steps\HelperTree\" />
   </ItemGroup>
 </Project>

@@ -67,9 +67,9 @@ namespace test1_project.Pages
             exselfile.Click();     
         }
 
-        List<string> elementTextList;
+        //List<string> elementTextList;
 
-        public List<string> GetValuesElements() 
+        /*public List<string> GetValuesElements() 
         {
             var elementsList = driver.FindElement(By.XPath(selectionElementsLocator));
             foreach (var item in elementsList)
@@ -77,6 +77,6 @@ namespace test1_project.Pages
                 elementTextList.Add(item.Text());
             }
             return elementTextList;     
-        }
+        }*/
     }
 }
